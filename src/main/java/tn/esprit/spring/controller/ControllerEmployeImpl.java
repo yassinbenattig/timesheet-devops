@@ -6,6 +6,7 @@ import java.util.List;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 
+import org.apache.log4j.Logger;
 import org.ocpsoft.rewrite.annotation.Join;
 import org.ocpsoft.rewrite.el.ELBeanName;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +29,7 @@ import tn.esprit.spring.services.IEmployeService;
 public class ControllerEmployeImpl  {
 	
 	static final String REDIRECT = "/login.xhtml?faces-redirect=true";
+	private static final Logger l = Logger.getLogger(ControllerEmployeImpl.class);
 
 	@Autowired
 	IEmployeService employeService;
@@ -81,6 +83,7 @@ public class ControllerEmployeImpl  {
 		if (authenticatedUser==null || !loggedIn) return REDIRECT;
 
 		employeService.addOrUpdateEmploye(new Employe(nom, prenom, email, password, actif, role)); 
+		l.info("Emplyee added");
 		return "null"; 
 	}  
 
