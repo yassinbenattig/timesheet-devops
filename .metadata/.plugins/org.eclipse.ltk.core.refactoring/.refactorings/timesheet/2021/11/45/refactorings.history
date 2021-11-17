@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;tn.esprit.spring.entities.Contrat.telephone&apos; in &apos;tn.esprit.spring.entities.Contrat&apos;&#x0D;&#x0A;- Original project: &apos;timesheet&apos;&#x0D;&#x0A;- Original element: &apos;tn.esprit.spring.entities.Contrat.telephone&apos;&#x0D;&#x0A;- Getter method name: &apos;getTelephone&apos;&#x0D;&#x0A;- Setter method name: &apos;setTelephone&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;telephone&apos;" flags="589830" getter="getTelephone" id="org.eclipse.jdt.ui.self.encapsulate" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;tn.esprit.spring.entities{Contrat.java[Contrat^telephone" insertion="11" setter="setTelephone" stamp="1636911946159" version="1.0" visibility="1"/>
+</session>
